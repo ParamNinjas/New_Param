@@ -1112,7 +1112,11 @@ section {
   color: #ffc107;
   margin: 0 1px;
 }
-
+.jsicon{
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 1em;
+}
 .testimonials .testimonial-item .testimonial-img {
   width: 200px;
   /* border-radius: 50%; */
