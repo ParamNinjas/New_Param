@@ -45,8 +45,8 @@
 
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="d-flex align-items-center">Nova</h1>
+        <img src="assets/img/param-logo.png" alt="">
+        <h1 class="d-flex align-items-center">Param</h1>
       </a>
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -57,10 +57,10 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
+          <!-- <li><a href="portfolio.html">Portfolio</a></li> -->
           <li><a href="team.html">Team</a></li>
           <li><a href="blog.html" class="active">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="#">Dropdown 1</a></li>
               <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
@@ -76,7 +76,7 @@
               <li><a href="#">Dropdown 3</a></li>
               <li><a href="#">Dropdown 4</a></li>
             </ul>
-          </li>
+          </li> -->
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav><!-- .navbar -->
@@ -110,56 +110,79 @@
             <article class="blog-details">
 
               <div class="post-img">
-                <img src="assets/img/blog/blog-1.jpg" alt="" class="img-fluid">
+              
               </div>
 
-              <h2 class="title">Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia</h2>
+              <h2 class="title">Issue #1 - Leak proofing S3 buckets - F1 + AWS - NanoID</h2>
 
               <div class="meta-top">
                 <ul>
                   <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="blog-details.html">John Doe</a></li>
-                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="blog-details.html"><time datetime="2020-01-01">Jan 1, 2022</time></a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="blog-details.html"><time datetime="2020-01-01">Jul 22, 2021</time></a></li>
                   <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="blog-details.html">12 Comments</a></li>
                 </ul>
               </div><!-- End meta top -->
 
               <div class="content">
                 <p>
-                  Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi praesentium. Aliquam et laboriosam eius aut nostrum quidem aliquid dicta.
-                  Et eveniet enim. Qui velit est ea dolorem doloremque deleniti aperiam unde soluta. Est cum et quod quos aut ut et sit sunt. Voluptate porro consequatur assumenda perferendis dolore.
+                  For the teams of developers/creators worldwide, there's no doubt that the last 2 years have propelled us ten years into the future.  There is a lot to explore and break down.
+
+                  This will hopefully be a newsletter that generates the insights you need as a developer to stay on pace with the fast-moving world we find ourselves living in today.
+                  
+                  Weekly format, consolidating everything from the last week.
+                  Short-form to work around busy client meetings, stand-ups and most importantly, building.
+                  Whether you are just getting started as a grad or are an industry veteran, the biggest goal of the newsletter is to educate.
+                  Subscribe today 🚀 to get weekly engineering content curated by a team of world-class engineers from Africa.
+                  
+                  
                 </p>
+                <img src="assets/img/warning.png" class="img-fluid" alt="">
+                <h3><1/> Leak proofing S3 buckets</h3>
+                <p>
+                  Extending your application's capabilities is a lot easier today because of the cloud. It has allowed developers to move so much faster. But with that power comes great responsibility, which hasn't been fully understood and resulting in the poor implementation of these technologies.
+
+                  In the last week, news broke, thousands of sensitive documents on a public s3 bucket owned by Backnine (insurtech startup) were exposed.
+                  
+                  AWS S3 service is one of the more widely used services in the AWS ecosystem. From analytics, hosting to disaster recovery and backup. Incidents like the BackNine breach more than they should. Resulting in S3 being the biggest culprit in several major data breaches found in the past.
+                </p>
+
 
                 <p>
-                  Sit repellat hic cupiditate hic ut nemo. Quis nihil sunt non reiciendis. Sequi in accusamus harum vel aspernatur. Excepturi numquam nihil cumque odio. Et voluptate cupiditate.
-                </p>
+                  With regulations like GDPR and POPI popping up worldwide, it is more important than ever that teams enforce best practices in the cloud. Here are a few ways you could start implementing:
 
+                  Ensuring the correct bucket policies should be the easiest to carry out, given private access is set by default upon creation. Only those granted access would be able to interact with your bucket.
+                  If you read the official documentation implementing least privilege access would be the next step, if not enforced for all permissions in the cloud. Users are assigned permission to resources and actions in s3 as they are needed.
+                  In the same way, you would store user passwords; you would store your objects by enabling encryption on your bucket. This will add an extra layer of protection to the data sitting in the bucket and can be performed on both the client and server.
+                  You can do other things to make interacting with s3 more secure, like setting up Cloud Trail logs to track events (e.g. GetObject) or enabling MFA, Versioning or VPC endpoint access. Read more about it here.
+                </p>
+                <img src="assets/img/f1.png" class="img-fluid" alt="">
+                <h3><2/> F1 engineering using cloud computing</h3>
+                <p>
+                  However, the world of motor racing might not be for everyone, however, reference the technology working behind the scenes, and you catch the attention of cloud enthusiasts everywhere.
+
+                  To summarise, F1 machines produce a lot of unwanted air due to concepts in aerodynamics and the way the vehicles are designed. That air makes it more challenging for the person behind. The closer they get to the vehicle in front, the more downforce is lost (the force that keeps the car to the ground).
+                  
+                  This is not what you want when trying to formulate a more competitive, wheel to wheel racing experience. The F1 team sort out to redesign the base of the car using Computational Fluid Dynamics (CFD).
+                  
+                  It's all explained in this video, but in short, CFD requires heaving computing to do what it does (simulations). With 2,500 compute cores provided by AWS, the F1 team could reduce four days per compute cycle to just 6-8 hours.  🤯
+                  
+                  
+                </p>
+                <img src="assets/img/Amazon.png" class="img-fluid" alt="">
+
+                <h3><3/> Inside the console 💻</h3>
                 <blockquote>
-                  <p>
-                    Et vero doloremque tempore voluptatem ratione vel aut. Deleniti sunt animi aut. Aut eos aliquam doloribus minus autem quos.
-                  </p>
-                </blockquote>
-
                 <p>
-                  Sed quo laboriosam qui architecto. Occaecati repellendus omnis dicta inventore tempore provident voluptas mollitia aliquid. Id repellendus quia. Asperiores nihil magni dicta est suscipit perspiciatis. Voluptate ex rerum assumenda dolores nihil quaerat.
-                  Dolor porro tempora et quibusdam voluptas. Beatae aut at ad qui tempore corrupti velit quisquam rerum. Omnis dolorum exercitationem harum qui qui blanditiis neque.
-                  Iusto autem itaque. Repudiandae hic quae aspernatur ea neque qui. Architecto voluptatem magni. Vel magnam quod et tempora deleniti error rerum nihil tempora.
+                  The AWS console hosts a huge number of managed services, 200 to be exact. Every week we look at one and give a brief breakdown. Taking you from a novice to a console hero.
                 </p>
+              </blockquote>
+              <!-- <img src="assets/img/blog/blog-inside-post.jpg" class="img-fluid" alt=""> -->
+                <p>
+                  Communication is key when designing a robust and scalable microservice. Operations (like order hand-bag) are carried through messages and powered by middleware that intercepts those messages to perform actions (check stock, etc.).
 
-                <h3>Et quae iure vel ut odit alias.</h3>
-                <p>
-                  Officiis animi maxime nulla quo et harum eum quis a. Sit hic in qui quos fugit ut rerum atque. Optio provident dolores atque voluptatem rem excepturi molestiae qui. Voluptatem laborum omnis ullam quibusdam perspiciatis nulla nostrum. Voluptatum est libero eum nesciunt aliquid qui.
-                  Quia et suscipit non sequi. Maxime sed odit. Beatae nesciunt nesciunt accusamus quia aut ratione aspernatur dolor. Sint harum eveniet dicta exercitationem minima. Exercitationem omnis asperiores natus aperiam dolor consequatur id ex sed. Quibusdam rerum dolores sint consequatur quidem ea.
-                  Beatae minima sunt libero soluta sapiente in rem assumenda. Et qui odit voluptatem. Cum quibusdam voluptatem voluptatem accusamus mollitia aut atque aut.
-                </p>
-                <img src="assets/img/blog/blog-inside-post.jpg" class="img-fluid" alt="">
-
-                <h3>Ut repellat blanditiis est dolore sunt dolorum quae.</h3>
-                <p>
-                  Rerum ea est assumenda pariatur quasi et quam. Facilis nam porro amet nostrum. In assumenda quia quae a id praesentium. Quos deleniti libero sed occaecati aut porro autem. Consectetur sed excepturi sint non placeat quia repellat incidunt labore. Autem facilis hic dolorum dolores vel.
-                  Consectetur quasi id et optio praesentium aut asperiores eaque aut. Explicabo omnis quibusdam esse. Ex libero illum iusto totam et ut aut blanditiis. Veritatis numquam ut illum ut a quam vitae.
-                </p>
-                <p>
-                  Alias quia non aliquid. Eos et ea velit. Voluptatem maxime enim omnis ipsa voluptas incidunt. Nulla sit eaque mollitia nisi asperiores est veniam.
+                  Amazon MQ is a managed service that hosts two messages-brokers Apache ActiveMQ and RabbitMQ. These protocols don’t require the client and server to be available simultaneously for communication to happen.
+                  
+                  Instead, the broker will take any incoming messages and them to a queue. MQ makes it simpler to set up and maintain your broker. Here's an in-depth article if you considering adopting one in your system.
                 </p>
 
               </div><!-- End post content -->
@@ -180,7 +203,7 @@
 
             </article><!-- End blog post -->
 
-            <div class="post-author d-flex align-items-center">
+            <!-- <div class="post-author d-flex align-items-center">
               <img src="assets/img/blog/blog-author.jpg" class="rounded-circle flex-shrink-0" alt="">
               <div>
                 <h4>Jane Smith</h4>
@@ -193,10 +216,11 @@
                   Itaque quidem optio quia voluptatibus dolorem dolor. Modi eum sed possimus accusantium. Quas repellat voluptatem officia numquam sint aspernatur voluptas. Esse et accusantium ut unde voluptas.
                 </p>
               </div>
-            </div><!-- End post author -->
+            </div> -->
+            <!-- End post author -->
 
-            <div class="comments">
-
+            <!-- <div class="comments">
+s
               <h4 class="comments-count">8 Comments</h4>
 
               <div id="comment-1" class="comment">
@@ -211,7 +235,8 @@
                     </p>
                   </div>
                 </div>
-              </div><!-- End comment #1 -->
+              </div>
+         
 
               <div id="comment-2" class="comment">
                 <div class="d-flex">
@@ -253,11 +278,15 @@
                       </div>
                     </div>
 
-                  </div><!-- End comment reply #2-->
+                  </div>
+                 
 
-                </div><!-- End comment reply #1-->
+                </div>
+                
+              
 
-              </div><!-- End comment #2-->
+              </div>
+             
 
               <div id="comment-3" class="comment">
                 <div class="d-flex">
@@ -272,9 +301,10 @@
                   </div>
                 </div>
 
-              </div><!-- End comment #3 -->
+              </div>
+            
 
-              <div id="comment-4" class="comment">
+               <div id="comment-4" class="comment">
                 <div class="d-flex">
                   <div class="comment-img"><img src="assets/img/blog/comments-6.jpg" alt=""></div>
                   <div>
@@ -286,7 +316,8 @@
                   </div>
                 </div>
 
-              </div><!-- End comment #4 -->
+              </div> -->
+              <!-- End comment #4 -->
 
               <div class="reply-form">
 
@@ -317,7 +348,8 @@
 
               </div>
 
-            </div><!-- End blog comments -->
+            </div> -->
+            <!-- End blog comments -->
 
           </div>
 
