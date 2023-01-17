@@ -754,6 +754,13 @@ section {
   font-size: 18px;
 }
 
+.services-list .service-item .title2 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #fff !important;
+}
+
 .services-list .service-item .title a {
   color: var(--color-secondary);
 }
